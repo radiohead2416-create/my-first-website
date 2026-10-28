@@ -1,60 +1,70 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Website</title>
-
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f3ed;
-    color: #20352b;
-  }
-
-  h1 {
-    background: #173b2e;
-    color: white;
-    padding: 35px 20px;
-    margin: 0;
-    text-align: center;
-  }
-
-  p, h2, ul, button {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-
-  h2 {
-    color: #173b2e;
-    margin-top: 30px;
-  }
-
-  button {
-    background: #173b2e;
-    color: white;
-    padding: 12px 22px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-</style>
-
+  <title>Homestyle Hardware</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1> Welcome to My Website! </h1>
-  <p> THIS IS MY FIRST WEBSITE I AM A ROOKIE.</p>
 
-  <h2>Our Products</h2>
-  <ul>
-    <li>Door Handles</li>
-    <li>Locks</li>
-    <li>Modular Kitchen Fittings</li>
-    <li>Door Kits</li>  
-</ul>
+  <header class="navbar">
+    <h2>Homestyle.</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <button>Contact Us</button>
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">QUALITY FITTINGS. THOUGHTFUL DESIGN.</p>
+      <h1>Upgrade Your Space.</h1>
+      <p>Discover door handles, secure locks,
+         and elegant kitchen fittings.</p>
+      <a class="button" href="#products">Explore Products</a>
+    </section>
+
+    <section class="products" id="products">
+      <h2>Our Products</h2>
+
+      <div class="product-grid">
+        <article class="card">
+          <div class="product-icon">🚪</div>
+          <h3>Door Handles</h3>
+          <p>Stylish details for every door.</p>
+        </article>
+
+        <article class="card">
+          <div class="product-icon">🔐</div>
+          <h3>Locks</h3>
+          <p>Security you can trust.</p>
+        </article>
+
+        <article class="card">
+          <div class="product-icon">🍽️</div>
+          <h3>Kitchen Fittings</h3>
+          <p>Smart solutions for modern kitchens.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Let's Connect</h2>
+      <p>Looking for quality hardware for your next project?</p>
+      <a class="button" href="mailto:hello@example.com">
+        Contact Us
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Homestyle Hardware</p>
+  </footer>
+
 </body>
 </html>
+
