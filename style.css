@@ -168,7 +168,6 @@ footer {
   border-radius: 8px;
   margin-bottom: 16px;
 }
-
 /* Product card hover effect */
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
