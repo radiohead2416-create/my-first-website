@@ -168,3 +168,19 @@ footer {
   border-radius: 8px;
   margin-bottom: 16px;
 }
+
+/* Product card hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Smooth product image corners */
+.product-image {
+  border-radius: 10px;
+}
