@@ -1,23 +1,48 @@
 
+
+/* ========================================
+   HOMESTYLE HARDWARE — MAIN STYLESHEET
+   ======================================== */
+
+/* 1. Global styles */
 * {
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 20px;
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background: #f5f3ed;
   color: #23382e;
-  line-height: 1.6;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
 }
 
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+}
+
+p {
+  line-height: 1.8;
+}
+
+a:focus-visible {
+  outline: 3px solid #d4af37;
+  outline-offset: 4px;
+}
+
+/* 2. Navigation bar */
 .navbar {
   background: #173b2e;
-  color: white;
+  color: #ffffff;
   padding: 16px 7%;
   display: flex;
   justify-content: space-between;
@@ -28,27 +53,31 @@ body {
 
 .navbar h2 {
   margin: 0;
+  color: #e3c77d;
 }
 
 .navbar nav {
   display: flex;
+  align-items: center;
   gap: 22px;
 }
 
 .navbar a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.2s ease;
 }
 
 .navbar a:hover {
   color: #e3c77d;
 }
 
+/* 3. Hero section */
 .hero {
   background: #244b3b;
-  color: white;
-  padding: 90px 8%;
+  color: #ffffff;
+  padding: 75px 7%;
   text-align: center;
 }
 
@@ -59,175 +88,178 @@ body {
   font-weight: bold;
 }
 
-
 .hero h1 {
-  max-width: 900px;
-  margin: 0 auto 20px;
-  font-size: clamp(36px, 5vw, 64px);
+  max-width: 1100px;
+  margin: 0 auto 22px;
+  font-size: clamp(44px, 6.5vw, 82px);
   line-height: 1.1;
+  font-weight: 800;
 }
-
 
 .hero p:not(.eyebrow) {
-  max-width: 580px;
-  margin: 0 auto 26px;
+  max-width: 700px;
+  margin: 0 auto 28px;
+  font-size: 18px;
 }
 
+/* 4. Main buttons */
 .button {
   display: inline-block;
   background: #e3c77d;
   color: #173b2e;
-  padding: 12px 24px;
-  border-radius: 6px;
+  padding: 14px 26px;
+  border: 2px solid #e3c77d;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 .button:hover {
   background: #f1dba0;
+  color: #173b2e;
+  transform: translateY(-3px);
 }
 
+/* 5. Products section */
 .products {
-  padding: 55px 7%;
+  padding: 60px 7%;
   text-align: center;
 }
 
 .products > h2,
 .contact h2 {
-  font-size: 30px;
+  font-size: 32px;
   margin-top: 0;
+  margin-bottom: 16px;
 }
 
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
-  margin-top: 30px;
+  gap: 24px;
+  margin-top: 32px;
+  align-items: stretch;
 }
 
+/* 6. Product cards */
 .card {
-  background: white;
-  padding: 28px 18px;
+  background: #ffffff;
+  padding: 24px 20px;
   border-radius: 12px;
   box-shadow: 0 5px 18px #173b2e12;
-  transition: transform 0.2s;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px #173b2e24;
 }
 
-.product-icon {
-  font-size: 48px;
-}
-
-.card h3 {
-  margin-bottom: 8px;
-}
-
-.card p {
-  color: #66756b;
-  margin-top: 0;
-}
-
-.contact {
-  background: #e7e6dc;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-footer {
-  background: #173b2e;
-  color: white;
-  padding: 18px;
-  text-align: center;
-}
-
-@media (max-width: 650px) {
-  .navbar {
-    justify-content: center;
-  }
-
-  .navbar nav {
-    gap: 14px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .hero {
-    padding: 65px 7%;
-  }
-
-  .product-grid {
-    grid-template-columns: 1fr;
-  }
-}
 .product-image {
   display: block;
   width: 100%;
   height: 200px;
   object-fit: contain;
-  background: white;
-  border-radius: 8px;
+  background: #ffffff;
+  border-radius: 10px;
   margin-bottom: 16px;
 }
-/* Product card hover effect */
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+.product-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+.card h3 {
+  margin: 10px 0;
+  font-size: 22px;
 }
 
-/* Smooth product image corners */
-.product-image {
-  border-radius: 10px;
+.card p {
+  color: #66756b;
+  margin: 0 0 12px;
 }
 
+/* 7. WhatsApp enquiry buttons */
 .whatsapp-button {
   display: inline-block;
-  background: #25D366;
+  background: #25d366;
   color: #ffffff;
   text-decoration: none;
   padding: 12px 18px;
   border-radius: 8px;
   font-weight: bold;
   margin-top: 10px;
-  transition: background 0.3s ease;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
 }
 
 .whatsapp-button:hover {
-  background: #128C7E;
+  background: #128c7e;
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
-.site-footer {
-  background: #12372a;
-  color: #ffffff;
+/* 8. About section */
+.about-section {
+  padding: 55px 20px;
   text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  color: #173b2e;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  margin-bottom: 15px;
+}
+
+/* 9. Contact section */
+.contact {
+  background: #e7e6dc;
+  padding: 55px 20px;
+  text-align: center;
+}
+
+/* 10. Footer */
+.site-footer,
+footer {
+  background: #173b2e;
+  color: #ffffff;
   padding: 35px 20px;
-  margin-top: 40px;
+  text-align: center;
 }
 
 .site-footer h2 {
-  color: #d4af37;
+  color: #e3c77d;
   margin-bottom: 10px;
 }
 
-.site-footer p {
+.site-footer p,
+footer p {
   margin: 10px 0;
 }
 
-.site-footer a {
-  display: inline-block;
-  color: #d4af37;
+.site-footer a,
+footer a {
+  color: #e3c77d;
   text-decoration: none;
-  margin-top: 10px;
 }
 
-.site-footer a:hover {
+.site-footer a:hover,
+footer a:hover {
   text-decoration: underline;
 }
 
@@ -236,101 +268,75 @@ footer {
   opacity: 0.8;
 }
 
+/* 11. Tablet and mobile layout */
+@media (max-width: 800px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-/* Mobile-friendly layout */
+  .hero h1 {
+    font-size: clamp(40px, 7vw, 60px);
+  }
+}
+
 @media (max-width: 600px) {
+  .navbar {
+    justify-content: center;
+    padding: 16px 5%;
+  }
+
+  .navbar nav {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 55px 6%;
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 9vw, 48px);
+  }
+
+  .hero p:not(.eyebrow) {
+    font-size: 16px;
+  }
+
   .products {
+    padding: 45px 6%;
+  }
+
+  .products > h2,
+  .contact h2,
+  .about-section h2 {
+    font-size: 28px;
+  }
+
+  .product-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .card {
-    padding: 18px;
+    padding: 20px 18px;
   }
 
   .product-image {
     height: 180px;
   }
+}
 
-  nav {
-    flex-wrap: wrap;
-    gap: 12px;
+/* 12. Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 
-  h1 {
-    font-size: 30px;
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
   }
-}
-
-.about-section {
-  padding: 45px 20px;
-  text-align: center;
-  max-width: 850px;
-  margin: 0 auto;
-}
-
-.about-section h2 {
-  color: #d4af37;
-  margin-bottom: 20px;
-}
-
-.about-section p {
-  line-height: 1.8;
-  margin-bottom: 15px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Premium typography */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  letter-spacing: 0.2px;
-}
-
-h1, h2, h3 {
-  line-height: 1.2;
-  letter-spacing: -0.4px;
-}
-h1 {
-  font-weight: 800;
-}
-h2 {
-  font-weight: 700;
-}
-
-p {
-  line-height: 1.8;
-}
-
-/* Better keyboard accessibility */
-a:focus-visible {
-  outline: 3px solid #d4af37;
-  outline-offset: 4px;
-}
-
-.hero {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-
-.hero h1 {
-  max-width: 1100px;
-  margin: 0 auto 20px;
-  font-size: clamp(44px, 6.5vw, 82px);
-  line-height: 1.1;
-}
-
-.hero p {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-
-.hero p {
-  font-size: 18px;
-  max-width: 650px;
-  margin: 0 auto;
 }
