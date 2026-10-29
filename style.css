@@ -323,3 +323,15 @@ a:focus-visible {
   margin: 0 auto;
 }
 
+
+.hero h1 {
+  font-size: 56px !important;
+  max-width: 900px;
+  margin: 0 auto 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 650px;
+  margin: 0 auto;
+}
