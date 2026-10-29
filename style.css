@@ -183,3 +183,20 @@ footer {
 .product-image {
   border-radius: 10px;
 }
+
+.whatsapp-button {
+  display: inline-block;
+  background: #25D366;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background: #128C7E;
+}
+
