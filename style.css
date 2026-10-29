@@ -335,27 +335,26 @@ footer a:hover {
 
   *,
    
-.hero .hero-button,
-.hero .button {
+
+.hero .button,
+.contact .button {
   display: inline-block;
-  background-color: #e3c77d !important;
-  color: #173b2e !important;
-  text-decoration: none !important;
+  background-color: #e3c77d;
+  color: #173b2e;
   padding: 14px 26px;
   border: 2px solid #e3c77d;
   border-radius: 8px;
+  text-decoration: none;
   font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.hero .hero-button:hover,
-.hero .button:hover {
-  background-color: #f1dba0 !important;
-  color: #173b2e !important;
-}
-
-  *::before,
-  *::after {
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-  }
+.hero .button:hover,
+.contact .button:hover {
+  background-color: #f1dba0;
+  color: #173b2e;
+  text-decoration: none;
+  transform: translateY(-3px);
 }
