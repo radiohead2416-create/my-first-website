@@ -307,3 +307,19 @@ a:focus-visible {
   outline-offset: 4px;
 }
 
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  max-width: 1000px;
+  margin: 0 auto 20px;
+  font-size: clamp(36px, 6vw, 76px);
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
