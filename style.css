@@ -386,8 +386,8 @@ footer a:hover {
 
 .brand-logo img {
   display: block;
-  width: 150px;
-  height: 35px;
+  width: 100px;
+  height: 15px;
   object-fit: contain;
   object-position: left center;
 }
@@ -427,9 +427,3 @@ footer a:hover {
   }
 }
 
-
-@media (max-width: 600px) {
-  .brand-logo img {
-    width: 130px;
-  }
-}
