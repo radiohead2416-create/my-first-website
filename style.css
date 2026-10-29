@@ -334,6 +334,25 @@ footer a:hover {
   }
 
   *,
+   
+.hero .hero-button,
+.hero .button {
+  display: inline-block;
+  background-color: #e3c77d !important;
+  color: #173b2e !important;
+  text-decoration: none !important;
+  padding: 14px 26px;
+  border: 2px solid #e3c77d;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.hero .hero-button:hover,
+.hero .button:hover {
+  background-color: #f1dba0 !important;
+  color: #173b2e !important;
+}
+
   *::before,
   *::after {
     transition-duration: 0.01ms !important;
