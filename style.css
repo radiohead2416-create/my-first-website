@@ -373,12 +373,13 @@ footer a:hover {
   object-fit: contain;
 }
 
+
 .navbar {
   gap: 20px;
 }
 
 @media (max-width: 600px) {
   .brand-logo img {
-    width: 180px;
+    width: 130px;
   }
 }
