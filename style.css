@@ -383,12 +383,15 @@ footer a:hover {
   flex-shrink: 0;
 }
 
+
 .brand-logo img {
   display: block;
   width: 150px;
-  height: 55px;
+  height: 35px;
   object-fit: contain;
+  object-position: left center;
 }
+
 
 .navbar nav {
   display: flex;
