@@ -358,3 +358,27 @@ footer a:hover {
   text-decoration: none;
   transform: translateY(-3px);
 }
+
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.brand-logo img {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.navbar {
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .brand-logo img {
+    width: 180px;
+  }
+}
