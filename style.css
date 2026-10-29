@@ -200,3 +200,36 @@ footer {
   background: #128C7E;
 }
 
+.site-footer {
+  background: #12372a;
+  color: #ffffff;
+  text-align: center;
+  padding: 35px 20px;
+  margin-top: 40px;
+}
+
+.site-footer h2 {
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.site-footer p {
+  margin: 10px 0;
+}
+
+.site-footer a {
+  display: inline-block;
+  color: #d4af37;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
