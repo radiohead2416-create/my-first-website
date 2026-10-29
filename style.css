@@ -257,3 +257,20 @@ footer {
     font-size: 30px;
   }
 }
+
+.about-section {
+  padding: 45px 20px;
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
