@@ -233,3 +233,27 @@ footer {
   opacity: 0.8;
 }
 
+
+/* Mobile-friendly layout */
+@media (max-width: 600px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .product-image {
+    height: 180px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
